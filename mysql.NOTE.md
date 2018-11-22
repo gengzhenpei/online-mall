@@ -12,9 +12,9 @@ USE `dwshop`;
 
 /* 创建table表 */
 
-DROP TABLE IF EXISTS `bbgshop_ad`;
+DROP TABLE IF EXISTS `shop_ad`;
 
-CREATE TABLE `bbgshop_ad` (
+CREATE TABLE `shop_ad` (
   // 属性字段及配置
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `ad_position_id` smallint(5) unsigned NOT NULL DEFAULT '0',
@@ -30,9 +30,9 @@ CREATE TABLE `bbgshop_ad` (
   KEY `enabled` (`enabled`)
 ) ENGINE=InnoDB AUTO_INCREMENT=177 DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `bbgshop_ad` */
+/*Data for the table `shop_ad` */
 
-insert  into `bbgshop_ad` (`id`,`ad_position_id`,`media_type`,`name`,`link`,`image_url`,`content`,`end_time`,`enabled`) values (174,1,1,'售后指南 (指定页面) ','/pages/ucenter/AftersaleGuide/AftersaleGuide','http://resource.bbgshop.com/Fp2YGSTKuVR-Rq5hgXZ2Z86dQ1aT','哈哈哈',0,1),(175,1,1,'轻奢首饰 (一级分类) ','/pages/category/category?id=1036030','http://resource.bbgshop.com/FmeLmWLzWZsMV3LaabncbSVFR5ls','zanwu',0,1),(176,1,1,'砍价页面 (指定页面) ','/pages/Resagin_bargain/Resagin_bargain','http://resource.bbgshop.com/FgP6H7EOwKfKx3scwIQG0DomJmL4','哈哈哈',0,1);
+insert  into `shop_ad` (`id`,`ad_position_id`,`media_type`,`name`,`link`,`image_url`,`content`,`end_time`,`enabled`) values (174,1,1,'售后指南 (指定页面) ','/pages/ucenter/AftersaleGuide/AftersaleGuide','http://resource.shop.com/Fp2YGSTKuVR-Rq5hgXZ2Z86dQ1aT','哈哈哈',0,1),(175,1,1,'轻奢首饰 (一级分类) ','/pages/category/category?id=1036030','http://resource.shop.com/FmeLmWLzWZsMV3LaabncbSVFR5ls','zanwu',0,1),(176,1,1,'砍价页面 (指定页面) ','/pages/Resagin_bargain/Resagin_bargain','http://resource.shop.com/FgP6H7EOwKfKx3scwIQG0DomJmL4','哈哈哈',0,1);
 
 #### 引擎
 MySQL默认的存储引擎是MyISAM，其他常用的就是InnoDB了。
