@@ -7,3 +7,8 @@
 element-ui组件库
 vant组件库： https://youzan.github.io/vant/#/zh-CN/intro
 vue
+
+## 项目运行
+
+### 首先数据库
+使用mysql的可视化工具，来运行sql语句，生成数据库。
